@@ -1,9 +1,18 @@
 .nav {
   border-bottom: 1px solid $page-purple-color;
+
+  &--in-menu {
+    border: none;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
     padding-block: 8px;
+
+    &--in-menu {
+      justify-content: flex-end
+    }
   }
 
   &__logo {
