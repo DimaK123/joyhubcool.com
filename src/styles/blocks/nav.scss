@@ -1,0 +1,28 @@
+.nav {
+  border-bottom: 1px solid $page-purple-color;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 8px;
+  }
+
+  &__logo {
+    @include figure(40px);
+  }
+
+  &__button {
+    padding: 10px 5px;
+    @include figure(40px);
+    
+  }
+
+  &__burger-menu {
+    width: 30px;
+    height: 20px;
+  }
+  
+
+  &__links {
+    display: none;
+  }
+}
