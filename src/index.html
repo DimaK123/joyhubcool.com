@@ -7,29 +7,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
   <link rel="stylesheet" href="./styles/main.min.css">
   <title>Joyhubcool.com</title>
 </head>
 <body class="page_body">
   <div class="menu page__menu">
     <nav class="nav nav--in-menu">
-      <div class="wrapper">
-        <div class="nav__inner nav__inner--in-menu">
-          <button class="nav__button">
-            <img class="nav__close-menu" src="./images/icons/menu-close.svg" alt="menu-close">
-          </button>
+      <button class="nav__button nav__button--close">
+        <img class="nav__close-menu" src="./images/icons/menu-close.svg" alt="close-menu">
+      </button>
 
-          <ul class="nav__links">
-            <li>HOME</li>
-            <li>GAME FEATURES</li>
-            <li>BENEFITS</li>
-            <li>USER REVIEWS</li>
-            <li>ABOUT US</li>
-            <li>FAQ</li>
-          </ul>
-        </div>
-      </div>
-  </nav>
+      <ul class="nav__links nav__links--in-menu">
+        <li>
+          <a class="nav__t2 t2" href="#">HOME</a>
+        </li>
+        <li>
+          <a class="nav__t2 t2" href="#">GAME FEATURES</a>
+        </li>
+        <li>
+          <a class="nav__t2 t2" href="#">BENEFITS</a>
+        </li>
+        <li>
+          <a class="nav__t2 t2" href="#">USER REVIEWS</a>
+        </li>
+        <li>
+          <a class="nav__t2 t2" href="#">ABOUT US</a>
+        </li>
+        <li>
+          <a class="nav__t2 t2" href="#">FAQ</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 
   <header class="header">
@@ -42,18 +54,30 @@
               <img class="nav__burger-menu" src="./images/icons/burger.svg" alt="burger-menu">
             </button>
             <ul class="nav__links">
-              <li>HOME</li>
-              <li>GAME FEATURES</li>
-              <li>BENEFITS</li>
-              <li>USER REVIEWS</li>
-              <li>ABOUT US</li>
-              <li>FAQ</li>
+              <li>
+                <a class="nav__t2 t2" href="#">HOME</a>
+              </li>
+              <li>
+                <a class="nav__t2 t2" href="#">GAME FEATURES</a>
+              </li>
+              <li>
+                <a class="nav__t2 t2" href="#">BENEFITS</a>
+              </li>
+              <li>
+                <a class="nav__t2 t2" href="#">USER REVIEWS</a>
+              </li>
+              <li>
+                <a class="nav__t2 t2" href="#">ABOUT US</a>
+              </li>
+              <li>
+                <a class="nav__t2 t2" href="#">FAQ</a>
+              </li>
             </ul>
           </div>
         </div>
     </nav>
 
-    <div class="header__wrapper wrapper">
+    <div class="wrapper">
       <div class="header__content">
           <div class="header__text">
             <h1 class="header__title">
@@ -68,10 +92,76 @@
             href="#"
             class="header__action-button action-button"
           >
-            <img class="header__image" src="./images/GP-btn.png" alt="GP-btn">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="./images/GP-bt-small.png">
+              <img class="header__image" src="./images/GP-btn.png" alt="GP-btn">
+            </picture>
           </a>
       </div>
     </div>
   </header>
+
+  <main>
+    <section class="features">
+      <div class="wrapper">
+        <div class="features__top">
+          <h2 class="features__title">GAME FEATURES</h2>
+
+          <button class="swiper-button-prev">
+            <img src="./images/button-left-active.png" alt="button-left">
+          </button>
+
+          <button class="swiper-button-next">
+            <img src="./images/button-right-active.png" alt="button-right">
+          </button>
+        </div>
+
+        <div class="features__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="features__card"
+                src="./images/hd.avif" alt="hd"
+              >
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="features__card"
+                src="./images/levels.avif" alt="levels"
+              >
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="features__card"
+                src="./images/soundtrack.avif" alt="soundtrack"
+              >
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="features__card"
+                src="./images/rewards.avif" alt="rewards"
+              >
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="features__card"
+                src="./images/updates.avif" alt="updates"
+              >
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="features__card"
+                src="./images/offline.avif" alt="offline"
+              >
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/menu.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
 </body>
 </html>

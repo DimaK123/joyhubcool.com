@@ -1,3 +1,18 @@
 .page {
-  
+  &--with-menu {
+    overflow: hidden;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+
+    &--visible {
+      transform: translateX(0);
+    }
+  }
 }

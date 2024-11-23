@@ -1,5 +1,16 @@
 .action-button {
   display: block;
-  width: 343px;
+  max-width: 343px;
   height: 62px;
+  border-radius: 8px;
+
+  @include onDesktop {
+    width: 186px;
+
+    &:hover {
+      outline: 2px solid #73CEF2;
+      outline-offset: -2px;
+      box-shadow: 0 0 20px 0 #98DAFE;
+    }
+  }
 }

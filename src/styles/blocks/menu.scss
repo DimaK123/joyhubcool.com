@@ -1,6 +1,8 @@
 .menu {
-  min-height: 100vh;
+  color: #fff;
+
+  height: 100vh;
+
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/header-bg-mob.avif');
   background-size: cover;
-  z-index: 1;
 }

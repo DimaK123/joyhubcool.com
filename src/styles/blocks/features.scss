@@ -1,0 +1,33 @@
+.features {
+  padding: 40px 0;
+
+  overflow-x: hidden;
+
+  &__title {
+    color: $page-purple-color;
+
+    margin-bottom: 32px;
+  }
+
+  &__swiper {
+    width: max-content;
+    margin: 0 auto;
+
+    @include onDesktop {
+      width: 100%;
+
+      overflow: hidden;
+    }
+  }
+
+  &__card {
+    width: 288px;
+    height: 362px;
+
+    @include onDesktop {
+      height: 476px;
+
+      object-fit: contain;
+    }
+  }
+}

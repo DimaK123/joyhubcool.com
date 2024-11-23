@@ -2,6 +2,11 @@
   border-bottom: 1px solid $page-purple-color;
 
   &--in-menu {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+
+    height: 100%;
+    padding: 8px 30px 0;
     border: none;
   }
 
@@ -11,7 +16,11 @@
     padding-block: 8px;
 
     &--in-menu {
-      justify-content: flex-end
+      flex-direction: column
+    }
+
+    @include onDesktop {
+      padding-block: 20px;
     }
   }
 
@@ -19,19 +28,60 @@
     @include figure(40px);
   }
 
-  &__button {
-    padding: 10px 5px;
+  &__close-button {
     @include figure(40px);
     
+  }
+
+  &__button {
+    @include figure(40px);
+    padding: 10px 5px;
+
+    &--close {
+      padding: 8px;
+      justify-self: flex-end;
+    }
+
+    @include onDesktop {
+      display: none;
+    }
   }
 
   &__burger-menu {
     width: 30px;
     height: 20px;
   }
-  
 
   &__links {
     display: none;
+
+    &--in-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+
+      height: 100%;
+    }
+
+    @include onDesktop {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__t2 {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 4px 8px;
+    font-weight: bold;
+
+    @include onDesktop {
+      &:hover {
+        color: $page-light-blue-color;
+        text-shadow: 0 0 20px 0 #98DAFE;
+      }
+    }
   }
 }
