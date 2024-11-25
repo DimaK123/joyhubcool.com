@@ -1,0 +1,77 @@
+.benefits {
+  padding: 40px 0 30px;
+  background-color: $page-blue-green-color;
+
+  @include onDesktop {
+    padding: 100px 0 225px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: max-content;
+    margin: 0 auto;
+
+    @include onDesktop {
+      position: relative;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 40px 24px;
+
+      max-width: 600px;
+      
+      margin: 0 0 0 105px;
+    }
+  }
+
+  &__list-item {
+    max-width: 264px;
+  }
+
+  & h2, h3 {
+    color: $page-light-blue-color;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @include onDesktop {
+      line-height: 50px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 32px;
+
+    margin-bottom: 8px;
+  }
+
+  &__t1 {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__picture {
+    position: absolute;
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+
+    &--library {
+      right: -232px;
+      top: -62px;
+    }
+
+    &--puzzle {
+      right: -416px;
+      top: -26px;
+    }
+  }
+}

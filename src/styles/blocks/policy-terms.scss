@@ -1,0 +1,72 @@
+.policy-terms {
+  padding: 40px 0;
+
+  @include onDesktop {
+    padding: 180px 104px;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: $page-purple-color;
+
+    margin-bottom: 32px;
+
+    @include onDesktop {
+      line-height: 50px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: $page-black-color;
+
+    @include onDesktop {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__text-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &--m16 {
+      gap: 16px;
+    }
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    color: $page-purple-color;
+
+    margin-bottom: 8px;
+
+    @include onDesktop {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+
+  &__list {
+    list-style: disc;
+    list-style-position: inside;
+
+    @extend .policy-terms__text;
+
+    &--mt8 {
+      margin-top: 8px;
+    }
+  }
+}

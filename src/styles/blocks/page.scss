@@ -1,4 +1,10 @@
 .page {
+  scroll-behavior: smooth;
+
+  @include onDesktop {
+    scroll-padding-top: 80px;
+  }
+
   &--with-menu {
     overflow: hidden;
   }

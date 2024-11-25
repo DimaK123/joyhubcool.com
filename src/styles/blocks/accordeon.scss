@@ -1,0 +1,49 @@
+.accordeon {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__triger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 36px;
+
+    border-bottom: 1px solid $page-black-color;
+    cursor: pointer;
+  }
+
+  &__triger-arrow {
+    height: 36px;
+    width: 36px;
+
+    background-image: url('../images/icons/arrow-down.svg');
+    background-position: center;
+  }
+
+  &__content {
+    height: 0;
+    transform: scaleY(0);
+    transition: transform 0.5s ease;
+  }
+
+  &__item--active &__content {
+    margin-top: 16px;
+    transform: scaleY(1);
+    height: fit-content;
+
+    @include onDesktop {
+      margin-top: 18px;
+    }
+  }
+
+  &__item--active &__triger-arrow {
+    transform: rotate(180deg);
+  }
+}

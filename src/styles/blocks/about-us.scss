@@ -1,0 +1,38 @@
+.about-us {
+  padding: 40px 0 130px;
+
+  background-color: $page-blue-green-color;
+  background-image: url('../images/about-us-bg.webp');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position-x: 155px;
+  background-position-y: 102%;
+
+  @include onDesktop {
+    padding: 100px 0;
+
+    background-size: contain;
+    background-position: right;
+  }
+
+  &__inner {
+    max-width: 600px;
+  }
+
+  &__title {
+    color: $page-light-blue-color;
+    text-transform: uppercase;
+
+    margin-bottom: 16px;
+
+    @include onDesktop {
+      line-height: 50px;
+
+      margin-bottom: 32px;
+    }
+  }
+
+  &__t1 {
+    color: #fff;
+  }
+}

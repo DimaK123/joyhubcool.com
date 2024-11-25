@@ -3,10 +3,22 @@
 
   overflow-x: hidden;
 
+  &__top {
+    display: grid;
+    grid-template-columns: max-content 156px;
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+
+    align-items: end;
+  }
+
   &__title {
     color: $page-purple-color;
 
-    margin-bottom: 32px;
+    @include onDesktop {
+      line-height: 50px;
+    }
   }
 
   &__swiper {
@@ -17,6 +29,45 @@
       width: 100%;
 
       overflow: hidden;
+    }
+  }
+
+  &__container-arrow {
+    display: none;
+    position: relative;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__swiper-button {
+    right: 0;
+    width: 42px;
+    height: 24px;
+
+    @include onDesktop {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    &-prev {
+      background-image: url('../images/btn-prev-active.svg');
+
+      &.swiper-button-disabled {
+        background-image: url('../images/btn-prev-disable.svg');
+        opacity: 1;
+      }
+    }
+
+    &-next {
+      background-image: url('../images/btn-next-active.svg');
+
+      &.swiper-button-disabled {
+        background-image: url('../images/btn-next-disable.svg');
+        opacity: 1;
+      }
     }
   }
 
@@ -31,3 +82,10 @@
     }
   }
 }
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none;
+}
+
+

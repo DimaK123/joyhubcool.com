@@ -15,7 +15,6 @@ const svgSprite = require('gulp-svg-sprite');
 const include = require('gulp-include');
 const rename = require('gulp-rename');
 const gulpIf = require('gulp-if');
-const debounce = require('lodash/debounce');
 
 function pages() {
   return src('./src/pages/*.html', { allowEmpty: true })
@@ -110,7 +109,7 @@ function building() {
   return src([
     'src/styles/main.min.css',
     'src/images/*.*', // при билдинге сразу указал рабочую папку, сейчас тестируем на img
-    'src/images/icons',
+    'src/images/icons/*.*',
     '!src/images/src',
     // '!src/images/icons/*.svg', // на случай если будем использовать спрайты вместо svg, то сами файлики .svg нам будут не нужны
     // 'src/images/icons/sprite.svg', // на случай если будем использовать спрайты вместо svg
