@@ -1,4 +1,9 @@
 .header {
+  display: grid;
+  grid-template-rows: max-content;
+
+  padding-bottom: 45px;
+
   color: #fff;
 
   min-height: 100vh;
@@ -17,6 +22,10 @@
     background-image: none;
   }
 
+  &__wrapper {
+    height: 100%;
+  }
+
   &__nav {
     margin-bottom: 225px;
 
@@ -26,19 +35,27 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
+    justify-self: center;
 
     @include onDesktop {
-      align-items: start;
+      justify-self: start;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+
+    @include onDesktop {
+      align-items: flex-start;
     }
   }
 
   &__text {
-    margin-bottom: 240px;
-
     @include onDesktop {
       max-width: 636px;
 
