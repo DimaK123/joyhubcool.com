@@ -7,7 +7,14 @@
   background-size: cover;
 
   @include onDesktop {
+    min-height: 800px;
     background-image: url('../images/header-bg.avif');
+  }
+
+  &--pt {
+    min-height: auto;
+
+    background-image: none;
   }
 
   &__nav {
@@ -35,7 +42,7 @@
     @include onDesktop {
       max-width: 636px;
 
-      margin-bottom: 40px;
+      margin: 190px 0 40px;
     }
   }
 

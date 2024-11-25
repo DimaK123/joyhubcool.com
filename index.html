@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./styles/main.min.css">
   <title>Joyhubcool.com</title>
 </head>
-<body class="page_body">
+<body class="page_body" id="home">
   <div class="menu page__menu">
     <nav class="nav nav--in-menu">
       <button class="nav__button nav__button--close">
@@ -23,22 +23,22 @@
 
       <ul class="nav__links nav__links--in-menu">
         <li>
-          <a class="nav__t2 t2" href="#">HOME</a>
+          <a class="nav__t2 t2" href="#home">HOME</a>
         </li>
         <li>
-          <a class="nav__t2 t2" href="#">GAME FEATURES</a>
+          <a class="nav__t2 t2" href="#game-features">GAME FEATURES</a>
         </li>
         <li>
-          <a class="nav__t2 t2" href="#">BENEFITS</a>
+          <a class="nav__t2 t2" href="#benefits">BENEFITS</a>
         </li>
         <li>
-          <a class="nav__t2 t2" href="#">USER REVIEWS</a>
+          <a class="nav__t2 t2" href="#user-reviews">USER REVIEWS</a>
         </li>
         <li>
-          <a class="nav__t2 t2" href="#">ABOUT US</a>
+          <a class="nav__t2 t2" href="#about-us">ABOUT US</a>
         </li>
         <li>
-          <a class="nav__t2 t2" href="#">FAQ</a>
+          <a class="nav__t2 t2" href="#faq">FAQ</a>
         </li>
       </ul>
     </nav>
@@ -55,22 +55,22 @@
             </button>
             <ul class="nav__links">
               <li>
-                <a class="nav__t2 t2" href="#">HOME</a>
+                <a class="nav__t2 t2" href="#home">HOME</a>
               </li>
               <li>
-                <a class="nav__t2 t2" href="#">GAME FEATURES</a>
+                <a class="nav__t2 t2" href="#game-features">GAME FEATURES</a>
               </li>
               <li>
-                <a class="nav__t2 t2" href="#">BENEFITS</a>
+                <a class="nav__t2 t2" href="#benefits">BENEFITS</a>
               </li>
               <li>
-                <a class="nav__t2 t2" href="#">USER REVIEWS</a>
+                <a class="nav__t2 t2" href="#user-reviews">USER REVIEWS</a>
               </li>
               <li>
-                <a class="nav__t2 t2" href="#">ABOUT US</a>
+                <a class="nav__t2 t2" href="#about-us">ABOUT US</a>
               </li>
               <li>
-                <a class="nav__t2 t2" href="#">FAQ</a>
+                <a class="nav__t2 t2" href="#faq">FAQ</a>
               </li>
             </ul>
           </div>
@@ -102,18 +102,16 @@
   </header>
 
   <main>
-    <section class="features">
+    <section class="features" id="game-features"> 
       <div class="wrapper">
         <div class="features__top">
           <h2 class="features__title">GAME FEATURES</h2>
 
-          <button class="swiper-button-prev">
-            <img src="./images/button-left-active.png" alt="button-left">
-          </button>
+          <div class="features__container-arrow">
+            <button class="features__swiper-button features__swiper-button-prev swiper-button-prev"></button>
 
-          <button class="swiper-button-next">
-            <img src="./images/button-right-active.png" alt="button-right">
-          </button>
+            <button class="features__swiper-button features__swiper-button-next swiper-button-next"></button>
+          </div>
         </div>
 
         <div class="features__swiper">
@@ -159,9 +157,257 @@
 
       </div>
     </section>
+
+    <section class="benefits" id="benefits">
+      <div class="wrapper">
+        <div class="benefits__inner">
+          <h2 class="benefits__title">BENEFITS</h2>
+
+          <ul class="benefits__list">
+            <li class="benefits__list-item">
+              <h3 class="benefits__subtitle">User-Friendly Interface</h3>
+              <p class="benefits__t1 t1">Easy-to-navigate design allows for seamless puzzle-solving.</p>
+            </li>
+
+            <li class="benefits__list-item">
+              <h3 class="benefits__subtitle">Flexible Gameplay</h3>
+              <p class="benefits__t1 t1">Solve puzzles at your own pace, with options for hints and zoom-in features.</p>
+            </li>
+
+            <li class="benefits__list-item">
+              <h3 class="benefits__subtitle">Relaxation and Focus</h3>
+              <p class="benefits__t1 t1">A calming, meditative experience that helps improve focus and provides relaxation.</p>
+            </li>
+
+            <li class="benefits__list-item">
+              <h3 class="benefits__subtitle">Community and Social Sharing</h3>
+              <p class="benefits__t1 t1">Share completed puzzles with friends and challenge them on the leaderboard.</p>
+            </li>
+
+            <li class="benefits__list-item">
+              <img
+                src="./images/benefits-img-library.avif"
+                alt="img-library"
+                class="benefits__picture benefits__picture--library"
+              >
+            </li>
+
+            <li class="benefits__list-item">
+              <img
+                src="./images/benefits-img-puzzle.avif"
+                alt="img-puzzle"
+                class="benefits__picture benefits__picture--puzzle"
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="user-reviews" id="user-reviews">
+      <div class="wrapper">
+        <div class="user-reviews__top">
+          <h2 class="user-reviews__title">user-reviews</h2>
+
+          <div class="user-reviews__container-arrow">
+            <button class="user-reviews__swiper-button user-reviews__swiper-button-prev swiper-button-prev"></button>
+
+            <button class="user-reviews__swiper-button user-reviews__swiper-button-next swiper-button-next"></button>
+          </div>
+        </div>
+
+        <div class="user-reviews__swiper">
+          <div class="swiper-wrapper">
+            <div class="user-reviews__swiper-slide swiper-slide">
+              <img class="user-reviews__rate" src="./images/star-rate.png" alt="star-rate">
+
+              <p class="user-reviews__review t1">
+                Beautiful puzzles! The fantasy themes are breathtaking, and the graphics are stunning.
+              </p>
+
+              <div class="user-reviews__user">
+                <img src="./images/user-1.png" alt="user-1" class="user-review__user-icon">
+
+                <h3 class="user-reviews__user-name">
+                  PuzzleDreamer
+                </h3>
+              </div>
+            </div>
+
+            <div class="user-reviews__swiper-slide swiper-slide">
+              <img class="user-reviews__rate" src="./images/star-rate.png" alt="star-rate">
+
+              <p class="user-reviews__review t1">
+                A great way to unwind. The daily puzzles keep me coming back for more!
+              </p>
+
+              <div class="user-reviews__user">
+                <img src="./images/user-2.png" alt="user-2" class="user-review__user-icon">
+
+                <h3 class="user-reviews__user-name">
+                  MagicFan
+                </h3>
+              </div>
+            </div>
+
+            <div class="user-reviews__swiper-slide swiper-slide">
+              <img class="user-reviews__rate" src="./images/star-rate.png" alt="star-rate">
+
+              <p class="user-reviews__review t1">
+                Love the variety and adjustable difficulty levels. Perfect for any puzzle lover.
+              </p>
+
+              <div class="user-reviews__user">
+                <img src="./images/user-3.png" alt="user-3" class="user-review__user-icon">
+
+                <h3 class="user-reviews__user-name">
+                  PieceWizard
+                </h3>
+              </div>
+            </div>
+
+            <div class="user-reviews__swiper-slide swiper-slide">
+              <img class="user-reviews__rate" src="./images/star-rate.png" alt="star-rate">
+
+              <p class="user-reviews__review t1">
+                The best jigsaw puzzle app I’ve found. Feels like stepping into a magical world with every puzzle!
+              </p>
+
+              <div class="user-reviews__user">
+                <img src="./images/user-4.png" alt="user-4" class="user-review__user-icon">
+
+                <h3 class="user-reviews__user-name">
+                  FantasyRealm
+                </h3>
+              </div>
+            </div>
+
+            <div class="user-reviews__swiper-slide swiper-slide">
+              <img class="user-reviews__rate" src="./images/star-rate.png" alt="star-rate">
+
+              <p class="user-reviews__review t1">
+                The offline mode is perfect for travel. Highly recommend for fans of fantasy and puzzles!
+              </p>
+
+              <div class="user-reviews__user">
+                <img src="./images/user-5.png" alt="user-5" class="user-review__user-icon">
+
+                <h3 class="user-reviews__user-name">
+                  DragonHeart
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <div class="wrapper">
+        <div class="about-us__inner">
+          <h2 class="about-us__title">
+            ABOUT US
+          </h2>
+          <p class="about-us__t1 t1">
+            Fantasy Jigsaw - HD Puzzle offers a unique experience for puzzle enthusiasts and fantasy lovers alike. Each puzzle is a journey into a meticulously crafted fantasy world, with themes ranging from enchanted forests to mystical realms. Our app provides a meditative escape, allowing players to explore the magic and artistry of high-definition jigsaw puzzles at their own pace. Whether you're looking to relax, challenge yourself, or share a fun experience with friends, Fantasy Jigsaw - HD Puzzle is designed for puzzle fans of all ages.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="wrapper">
+        <div class="faq__inner">
+          <h2 class="faq__title">FAQ</h2>
+          
+          <div class="faq__accordeon accordeon">
+            <div class="accordeon__item">
+              <div class="accordeon__triger">
+                <h3 class="accordeon__triger-question">How do I start playing Fantasy Jigsaw - HD Puzzle?</h3>
+                <div class="accordeon__triger-arrow"></div>
+              </div>
+              <div class="accordeon__content">
+                <p class="accordeon__t1 t1">
+                  Jigsaw Game? Download from the Play Store, install, and tap 'Play' to dive into your first puzzle.
+                </p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__triger">
+                <h3 class="accordeon__triger-question">Is the game free?</h3>
+                <div class="accordeon__triger-arrow"></div>
+              </div>
+              <div class="accordeon__content">
+                <p class="accordeon__t1 t1">
+                  Yes, the game is free to play, with optional in-app purchases for premium puzzle packs and features.
+                </p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__triger">
+                <h3 class="accordeon__triger-question">Can I play without an internet connection?</h3>
+                <div class="accordeon__triger-arrow"></div>
+              </div>
+              <div class="accordeon__content">
+                <p class="accordeon__t1 t1">
+                  Yes, Fantasy Jigsaw - HD Puzzle offers offline play, so you can enjoy puzzles anytime.
+                </p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__triger">
+                <h3 class="accordeon__triger-question">How often are new puzzles added?</h3>
+                <div class="accordeon__triger-arrow"></div>
+              </div>
+
+              <div class="accordeon__content">
+                <p class="accordeon__t1 t1">
+                  New puzzles and themes are added weekly to keep the experience fresh and engaging.
+                </p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__triger">
+                <h3 class="accordeon__triger-question">Can I change the difficulty of puzzles?</h3>
+                <div class="accordeon__triger-arrow"></div>
+              </div>
+              <div class="accordeon__content">
+                <p class="accordeon__t1 t1">
+                  Jigsaw Game? Download from the Play Store, install, and tap 'Play' to dive into your first puzzle.
+                </p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__triger">
+                <h3 class="accordeon__triger-question">Can I share my progress with friends?</h3>
+                <div class="accordeon__triger-arrow"></div>
+              </div>
+              <div class="accordeon__content">
+                <p class="accordeon__t1 t1">
+                  Jigsaw Game? Download from the Play Store, install, and tap 'Play' to dive into your first puzzle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__links">
+        <a class="footer__t3 t3" href="privacy-policy.html">Privacy Policy</a>
+        <a class="footer__t3 t3" href="terms-conditions.html"> Terms and Conditions</a>
+      </div>
+      <p class="footer__copyright t4">
+        ©2024 JoyHubCool.com, All rights reserved.
+      </p>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/menu.min.js"></script>
   <script src="./js/swiper.min.js"></script>
+  <script src="./js/accordeon.min.js"></script>
 </body>
 </html>
