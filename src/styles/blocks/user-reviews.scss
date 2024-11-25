@@ -30,8 +30,12 @@
     width: max-content;
     margin: 0 auto;
 
+    pointer-events: none;
+
     @include onDesktop {
       width: 100%;
+
+      pointer-events: all;
 
       overflow: hidden;
     }
@@ -90,32 +94,6 @@
       display: block;
     }
   }
-
-  // &__swiper-button-prev {
-  //   left: 0;
-  //   width: 42px;
-  //   height: 24px;
-
-  //   background-image: url('../images/btn-prev-active.svg');
-
-  //   &.swiper-button-prev.swiper-button-disabled {
-  //     background-image: url('../images/btn-prev-disable.svg');
-  //     opacity: 1;
-  //   }
-  // }
-
-  // &__swiper-button-next {
-  //   right: 0;
-  //   width: 42px;
-  //   height: 24px;
-
-  //   background-image: url('../images/btn-next-active.svg');
-
-  //   &.swiper-button-next.swiper-button-disabled {
-  //     background-image: url('../images/btn-next-disable.svg');
-  //     opacity: 1;
-  //   }
-  // }
 
   &__swiper-button {
     right: 0;
